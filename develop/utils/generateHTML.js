@@ -1,4 +1,6 @@
-
+function generateHTML(data) {
+    return `${data.employee}`
+}
 
 
 
