@@ -14,7 +14,7 @@ function writeToFile(fileName, data) {
 function init () {
     inquirer.prompt(employeeQuestion)
     .then((data) => {
-        writeToFile("cards.html", generateHTML(data));
+        writeToFile("index.html", generateHTML(data));
     })
     .catch((err) => console.log(err));
 
