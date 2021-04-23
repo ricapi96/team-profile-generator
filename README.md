@@ -36,7 +36,7 @@ npm i jest
 
 ## Screenshot
 
-![HTML webpage titled “My Team”](./develop/images/10-object-oriented-programming-homework-demo.png)
+![HTML webpage titled “My Team”](./assets/images/10-object-oriented-programming-homework-demo.png)
 
 
 ## Contributing
