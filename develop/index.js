@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
-const generateHTML = require("./utils/generateHTML.js");
+const generateHTML = require("./src/generateHTML.js");
  
 
 // Function to write HTML file
