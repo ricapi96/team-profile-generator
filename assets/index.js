@@ -1,9 +1,76 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 const generateHTML = require("../generateHTML.js");
+const manager = require("./lib/manager");
+const engineer = require("./lib/engineer");
+const intern = require("./lib/intern");
+const {
+    employeeQuestions,
+    managerQuestions,
+    engineerQuestions,
+    internQuestions,
+} = require("./lib/questions");
  
-// Array of employee questions
-const employeeQuestions = [
+// Array of All employee questions
+employeeQuestions = [
+    {
+        type: 'list',
+        name: 'employee',
+        message: 'What type of employee would you like in your team?',
+        choices: ['manager', 'engineer', 'intern'],
+    }
+];
+
+// Manager Questions
+managerQuestions = [
+    {
+        type: 'input',
+        name: 'name',
+        message: 'What is your name?',
+    },
+    {
+        type: 'input',
+        name: 'id',
+        message: 'What is your id?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?',
+    },
+    {
+        type: 'input',
+        name: 'office number',
+        message: 'What is your office number?',
+    },
+];
+
+// Engineer Questions
+engineerQuestions = [
+    {
+        type: 'input',
+        name: 'name',
+        message: 'What is your name?',
+    },
+    {
+        type: 'input',
+        name: 'id',
+        message: 'What is your id?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'email?',
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github username?',
+    },
+];
+
+// Intern Questions
+internQuestions = [
     {
         type: 'input',
         name: 'name',
@@ -21,9 +88,8 @@ const employeeQuestions = [
     },
     {
         type: 'list',
-        name: 'type',
-        message: 'What type of employee are you?',
-        choices: ['manager', 'engineer', 'intern', 'assistant to the manager'],
+        name: 'school',
+        message: 'What school do you attend?',
     },
 ];
 
