@@ -14,10 +14,10 @@ function generateHTML(data) {
         <div class="jumbotron">
             <h1 class="text-center">My Team</h1>
         </div>
-         <h2>${data.employeeCard}</h2>
-         <h2>${data.engineerCard}</h2> 
-         <h2>${data.managerCard}</h2>
-         <h2>${data.internCard}</h2>
+         <h2>${data.name}</h2>
+         <h2>${data.id}</h2> 
+         <h2>${data.email}</h2>
+         <h2>${data.type}</h2>
          
     
     
