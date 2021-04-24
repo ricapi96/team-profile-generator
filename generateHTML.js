@@ -11,15 +11,10 @@ function generateHTML(data) {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     </head>
     <body>
-        <div class="jumbotron">
-            <h1 class="text-center">My Team</h1>
-        </div>
-         <h2>${data.name}</h2>
-         <h2>${data.id}</h2> 
-         <h2>${data.email}</h2>
-         <h2>${data.type}</h2>
-         
     
+    
+ 
+   
     
     
     
