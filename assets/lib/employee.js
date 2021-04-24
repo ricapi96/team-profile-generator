@@ -1,4 +1,4 @@
-class employee {
+class Employee {
     constructor(name, id, email) {
         this.name = name;
         this.id = id;
@@ -18,4 +18,4 @@ class employee {
     }
 }
 
-module.exports = employee;
+module.exports = Employee;
