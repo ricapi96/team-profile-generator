@@ -93,7 +93,10 @@ function renderEmployeeCard() {
               </div>
           </div>
           </div><hr>`
+    } else (employee === "none") {
+        return "";
     }
+}
 
 
 
