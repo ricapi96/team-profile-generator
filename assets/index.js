@@ -8,6 +8,18 @@ const {
     engineerQuestions,
     internQuestions,
 } = require("./lib/questions.js");
+
+function Cards(status, questionType) {
+    this.status = status;
+    this.questionType = questionType;
+    this.generateCard = () => {
+        console.log(`Create a team card by answering the following questions about the employees ${this.status} and ${this.questionType}.`);
+    };
+}
+
+const newbie = new Cards ('Manager', managerQuestions);
+
+newbie.generateCard();
  
 
 
