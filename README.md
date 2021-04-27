@@ -36,7 +36,7 @@ npm i jest
 
 ## Screenshot
 
-![HTML webpage titled “My Team”](./assets/images/10-object-oriented-programming-homework-demo.png)
+![HTML webpage titled “My Team”](./assets/images/my-team.png)
 
 
 ## Contributing
@@ -57,4 +57,4 @@ https://opensource.org/licenses/MIT
 
 
 
-                                  💙 Made by Erica Roquemore 💙
+                                      💙 Made by Erica Roquemore 💙
