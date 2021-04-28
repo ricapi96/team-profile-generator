@@ -1,14 +1,22 @@
-module.exports = {
-    // All employee questions
-employeeQuestions = {
-        type: 'list',
-        name: 'employee',
-        message: 'What type of employee would you like in your team?',
-        choices: ['manager', 'engineer', 'intern', 'done'],
-    },
+const inquirer = require("inquirer");
+class Prompt {
+    questionPrompt() {
+        return inquirer.prompt([
+            {
+                type: 'list',
+                name: 'employee',
+                message: 'What type of employee would you like in your team?',
+                choices: ['manager', 'engineer', 'intern', 'done'],
+            },
+            
+        ]);
+    }
+
+     
 
 // Manager Questions
-managerQuestions = [
+managerQuestions() {
+    return inquirer.prompt( [
     {
         type: 'input',
         name: 'name',
@@ -29,9 +37,12 @@ managerQuestions = [
         name: 'number',
         message: "What is the manager's office number?",
     },
-],
+]);
+}
+
 // Engineer Questions
-engineerQuestions = [
+engineerQuestions() {
+    return inquirer.prompt( [
     {
         type: 'input',
         name: 'name',
@@ -52,10 +63,12 @@ engineerQuestions = [
         name: 'github',
         message: "What is the engineer's github username?",
     },
-],
+]);
+}
 
 // Intern Questions
-internQuestions = [
+internQuestions() {
+    return inquirer.prompt( [
     {
         type: 'input',
         name: 'name',
@@ -76,6 +89,8 @@ internQuestions = [
         name: 'school',
         message: 'What school does the intern attend?',
     },
-],
+]);
+}
+}
 
-};
+module.exports = Prompt;

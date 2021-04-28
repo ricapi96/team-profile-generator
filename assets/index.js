@@ -26,13 +26,6 @@ const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
 
 
-// Function to write HTML file
-// function writeToFile(fileName, data) {
-//     fs.writeFile(fileName, data, (err) =>
-//     err ? console.log(err) : console.log("Creating Employee Cards...")
-//     );
-// }
-
 // Function to initialize the app
 function init () {
     inquirer.prompt(employeeQuestions)
