@@ -85,7 +85,7 @@ internQuestions() {
         message: "What is the intern's email?",
     },
     {
-        type: 'list',
+        type: 'input',
         name: 'school',
         message: 'What school does the intern attend?',
     },

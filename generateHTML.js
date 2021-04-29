@@ -1,49 +1,19 @@
 // Function to generate HTML
 
-const { employeeQuestions, managerQuestions } = require("./assets/lib/questions");
-
 function generateHTML(data) {
-    return `<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Team Profile Generator</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    </head>
-    <body>
-    <div class="jumbotron">
-		<h1 class="text-center">My Team</h1>`
-
-        `<div class="container">
-            <div class="row row-cols-3">
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                      ${employeeQuestions.employee}
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-              </div>
-              </div><hr>
-              
     
- 
-   
-    
-    
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    </body>
-    </html>`
 }
 
-function renderEmployeeCard() {
+
+// const html = [];
+
+// html.push(team
+//   .filter(employee => employee.getRole() === "Manager")
+//   .map(manager => generateManager(manager))
+// );
+
+// Need to take the array of employees and filter it to pull out each specific employee type, then call this function with the specific team member as an argument
+function renderEmployeeCard(team) {
     if (employee === manager) {
         return `<div class="container">
         <div class="row row-cols-3">
@@ -117,4 +87,43 @@ function renderInternCard() {}
 
 
 
-module.exports = generateHTML;
+module.exports = team => {
+  return `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team Profile Generator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="jumbotron">
+		<h1 class="text-center">My Team</h1>
+
+        <div class="container">
+            <div class="row row-cols-3">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                      ${renderEmployeeCard(team)}
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                  </div>
+              </div>
+              </div><hr>
+              
+    
+ 
+   
+    
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+    </html>`
+};

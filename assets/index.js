@@ -7,50 +7,55 @@ const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
 const Prompt = require("./lib/questions");
 
+let teamArray = [];
+
 const prompt = new Prompt();
 
 // Initialize the app
-function newCard () {
-    prompt.Prompt().then((res) => {
-        if (res.prompt == "Engineer") getEngineer();
-        if (res.prompt == "Manager") getManager();
-        if (res.prompt == "Intern") getIntern();
-        if (res.prompt == "done") generateHTML();
-    });
-}
+// function newCard () {
+//     prompt.Prompt().then((res) => {
+       
+//     });
+// }
 
 function getEmployee() {
     prompt.questionPrompt().then((res) => {
-        card.push(new Employee(res.name, res.id, res.email, res.number));
-        promptMenu();
+       // card.push(new Employee(res.name, res.id, res.email, res.number));
+       if (res.employee == "engineer") getEngineer();
+       if (res.employee == "manager") getManager();
+       if (res.employee == "intern") getIntern();
+       if (res.employee == "done") createHtml();
+        // promptMenu();
     });
 }
 
 function getManager() {
     prompt.managerQuestions().then((res) => {
-        card.push(new Manager(res.name, res.id, res.email, res.number));
-        promptMenu();
+        teamArray.push(new Manager(res.name, res.id, res.email, res.number));
+        console.log(teamArray);
+        getEmployee();
     });
 }
 
 function getEngineer() {
     prompt.engineerQuestions().then((res) => {
-        card.push(new Engineer(res.name, res.id, res.email, res.github));
-        promptMenu();
+        teamArray.push(new Engineer(res.name, res.id, res.email, res.github));
+        console.log(teamArray);
+        getEmployee();
     });
 }
 
 function getIntern() {
     prompt.internQuestions().then((res) => {
-        card.push(new Intern(res.name, res.id, res.email, res.school));
-        promptMenu();
+        teamArray.push(new Intern(res.name, res.id, res.email, res.school));
+        console.log(teamArray);
+        getEmployee();
     });
 }
 
-function createCard() {
+function createHtml() {
     console.log("generating Team Card...");
-    const card = new Card();
-    generateHTML(card);
+    fs.writeFileSync("index.html", generateHTML(teamArray));
 }
 
 
