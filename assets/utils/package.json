@@ -1,15 +1,25 @@
 {
-  "name": "static-site",
+  "name": "team-profile",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {},
   "scripts": {
+    "start": "node index.js",
     "test": "jest"
   },
-  "author": "Erica Roquemore",
-  "license": "ISC",
-  "dependencies": {
-    "inquirer": "^6.3.1",
-    "jest":"27.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC"
+  
 }
