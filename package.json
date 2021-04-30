@@ -1,0 +1,22 @@
+{
+  "name": "team-profile",
+  "version": "1.0.0",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm i test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricapi96/team-profile-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricapi96/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/ricapi96/team-profile-generator#readme",
+  "dependencies": {
+    "test": "^0.6.0"
+  }
+}
