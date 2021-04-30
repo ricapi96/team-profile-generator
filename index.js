@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
-const generateHTML = require("../generateHTML.js");
+const generateHTML = require("./generateHTML.js");
 const Employee = require("./lib/employee")
 const Manager = require("./lib/manager");
 const Engineer = require("./lib/engineer");

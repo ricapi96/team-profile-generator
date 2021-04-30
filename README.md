@@ -36,7 +36,7 @@ npm i jest
 
 ## Screenshot
 
-![HTML webpage titled “My Team”](./assets/images/my-team.png)
+![HTML webpage titled “My Team”](./images/my-team.png)
 
 
 ## Contributing
