@@ -1,9 +1,10 @@
-* {
+/* * {
     background-color: bisque;
-}
+} */
 
 h1 {
-   background-color: rgb(85, 150, 150);
+   background-color: rgb(218, 32, 32);
+   color: whitesmoke;
    text-align: center;
    font-size: 60px;
    width: auto;
