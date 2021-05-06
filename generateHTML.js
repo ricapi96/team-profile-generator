@@ -4,7 +4,10 @@ function generateHTML(data) {
     
 }
 
-
+let employee = require("./lib/employee");
+let manager = require("./lib/manager");
+let engineer = require("./lib/engineer");
+let intern = require("./lib/intern");
 // const html = [];
 
 // html.push(team
