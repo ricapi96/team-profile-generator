@@ -55,7 +55,7 @@ function getIntern() {
 
 function createHtml() {
     console.log("generating Team Card...");
-    fs.writeFileSync("index.html", generateHTML(teamArray));
+    fs.writeFileSync("team.html", generateHTML(teamArray));
 }
 
 
