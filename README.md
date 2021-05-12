@@ -28,7 +28,7 @@ npm inquirer
 ## Test
 To run tests, run the following command:
 ```
-npm i jest
+npm run test
 ```
 
 ## Walkthrough Video
@@ -40,6 +40,8 @@ npm i jest
 
 
 ## Contributing
+
+* Sammantha Sasenick (tutor)
 
 
 ## License
