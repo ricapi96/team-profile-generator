@@ -120,14 +120,14 @@ module.exports = team => {
                 <div class="col-md-4">
                   <div class="card shadow mt-5" style="width: 18rem">
                       <div class="card-body bg-primary text-white">
-                        <h3 class="card-title">Michael Scott</h3>
+                        <h3 class="card-title">Michael</h3>
                         <!-- Title and Icon -->
             <h4 class="card-text"><i class="fas fa-user-tie"></i> Manager</h4>
                       </div>
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">ID: 001</li>
-                        <li class="list-group-item">Email: mscott@dundermifflin.com </li>
-                        <li class="list-group-item">Office number: 867-5309</li>
+                        <li class="list-group-item">Email: mscott@dm.com </li>
+                        <li class="list-group-item">Office number: 101</li>
                       </ul>
                     </div>
                 </div>
@@ -136,14 +136,14 @@ module.exports = team => {
      <div class="col-md-4">
       <div class="card shadow mt-5" style="width: 18rem">
           <div class="card-body bg-primary text-white">
-            <h3 class="card-title">Dwight K. Schrute</h3>
+            <h3 class="card-title">Dwight</h3>
             <!-- Title and Icon -->
-            <h4 class="card-text"><i class="fas fa-user"></i> Assistant Manager</h4>
+            <h4 class="card-text"><i class="fas fa-user"></i> Engineer</h4>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Id: 002</li>
-            <li class="list-group-item">Email: dschrute@dundermifflin.com</li>
-            <li class="list-group-item">Github: beetBoyBSG</li>
+            <li class="list-group-item">Email: ds@dm.com</li>
+            <li class="list-group-item">Github: beetBoy</li>
           </ul>
         </div>
     </div>
@@ -152,14 +152,14 @@ module.exports = team => {
     <div class="col-md-4">
       <div class="card shadow mt-5" style="width: 18rem">
           <div class="card-body bg-primary text-white">
-            <h3 class="card-title">Jimothy Halpert</h3>
+            <h3 class="card-title">Jimothy</h3>
             <!-- Title and Icon -->
             <h4 class="card-text"><i class="fas fa-user"></i> Engineer</h4>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Id: 003</li>
-            <li class="list-group-item">Email: jhalpert@dundermifflin.com</li>
-            <li class="list-group-item">Github: frankNBeans</li>
+            <li class="list-group-item">Email: jim@dm.com</li>
+            <li class="list-group-item">Github: frankNbeans</li>
           </ul>
         </div>
     </div>
@@ -168,14 +168,14 @@ module.exports = team => {
     <div class="col-md-4">
       <div class="card shadow mt-5" style="width: 18rem">
           <div class="card-body bg-primary text-white">
-            <h3 class="card-title">Toby Flenderson</h3>
+            <h3 class="card-title">Toby</h3>
             <!-- Title and Icon -->
             <h4 class="card-text"><i class="fas fa-user"></i> Engineer</h4>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Id: 005</li>
-            <li class="list-group-item">Email: tflender@dundermifflin.com</li>
-            <li class="list-group-item">Github: scrantonStrangler</li>
+            <li class="list-group-item">Id: 004</li>
+            <li class="list-group-item">Email: toby@dm.com</li>
+            <li class="list-group-item">Github: tobyss</li>
           </ul>
         </div>
     </div>
@@ -184,14 +184,14 @@ module.exports = team => {
     <div class="col-md-4">
       <div class="card shadow mt-5" style="width: 18rem">
           <div class="card-body bg-primary text-white">
-            <h3 class="card-title">Ryan Howard</h3>
+            <h3 class="card-title">Ryan</h3>
             <!-- Title and Icon -->
             <h4 class="card-text"><i class="fas fa-user-graduate"></i> Intern</h4>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Id:004</li>
-            <li class="list-group-item">Email: rhoward@dundermifflin.com</li>
-            <li class="list-group-item">School: Scranton Business College</li>
+            <li class="list-group-item">Id:005</li>
+            <li class="list-group-item">Email: ryan@dm.com</li>
+            <li class="list-group-item">School: Scranton</li>
           </ul>
         </div>
     </div>

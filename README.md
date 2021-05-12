@@ -33,6 +33,8 @@ npm run test
 
 ## Walkthrough Video
 
+* https://www.youtube.com/watch?v=NHIvq4t4mCE
+
 
 ## Screenshot
 
