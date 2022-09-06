@@ -4,6 +4,7 @@
   "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "npm i test"
   },
   "repository": {
