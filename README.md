@@ -15,7 +15,6 @@ This is a Node.js command-line application that takes in information about emplo
 * [Screenshot](#screenshot)
 * [License](#license)
 * [Contributing](#contributing)
-* [Badge](#badge)
 * [Questions](#questions)
 
 
@@ -50,9 +49,6 @@ npm run test
 MIT
 https://opensource.org/licenses/MIT
 
-
-## Badge
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 
 
